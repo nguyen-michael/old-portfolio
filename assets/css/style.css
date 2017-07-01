@@ -1,0 +1,27 @@
+/* Section backgrounds*/
+
+#intro {
+    background-image: url("../images/stacked-rocks.jpg");  
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#portfolio {
+    background-image: url("../images/leaves.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact {
+    background-image: url("../images/succulent.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar-default {
+    background-color: #587533;
+}
+
+.portfolio-well {
+    background-color: rgba(255, 255, 255, .2);
+}
