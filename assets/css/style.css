@@ -6,6 +6,10 @@ body {
     color: #ededed;
 }
 
+.contact-section, .intro-section {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
 
 /* intro formatting */
 .intro-section p {
@@ -15,10 +19,10 @@ body {
 }
 
 /* portfolio formatting*/
-
+/*
 .portfolio-section {
     margin-top: -100px;
-}
+}*/
 
 .navbar-default {
     background-color: #ff9d0a;
@@ -35,4 +39,8 @@ body {
 
 .nav-pills li a:hover {
     color: #a1a1a1;
+}
+
+.tab-pane {
+    padding-top: 30px;
 }
