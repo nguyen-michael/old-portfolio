@@ -1,6 +1,12 @@
-/* Section backgrounds*/
+/*Body Background*/
 
-#intro {
+body { 
+    background-image: url("../images/black_mamba.png");
+    background-repeat: repeat;
+    color: #efefef;
+}
+
+/*#intro {
     background-image: url("../images/stacked-rocks.jpg");  
     background-size: cover;
     background-attachment: fixed;
@@ -16,10 +22,10 @@
     background-image: url("../images/succulent.jpg");
     background-size: cover;
     background-attachment: fixed;
-}
+}*/
 
 .navbar-default {
-    background-color: #587533;
+    background-color: #31aeed;
 }
 
 .portfolio-well {
