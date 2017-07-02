@@ -3,31 +3,36 @@
 body { 
     background-image: url("../images/black_mamba.png");
     background-repeat: repeat;
-    color: #efefef;
+    color: #ededed;
 }
 
-/*#intro {
-    background-image: url("../images/stacked-rocks.jpg");  
-    background-size: cover;
-    background-attachment: fixed;
+
+/* intro formatting */
+.intro-section p {
+    font-size: 1.9rem;
+    text-align: left;
+    text-justify: auto;
 }
 
-#portfolio {
-    background-image: url("../images/leaves.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}
+/* portfolio formatting*/
 
-#contact {
-    background-image: url("../images/succulent.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}*/
+.portfolio-section {
+    margin-top: -100px;
+}
 
 .navbar-default {
-    background-color: #31aeed;
+    background-color: #ff9d0a;
 }
 
-.portfolio-well {
-    background-color: rgba(255, 255, 255, .2);
+.nav-pills {
+    background-color: #ff9d0a;
+    color: #ededed;
+}
+
+.nav-pills li a{
+    color: #ededed;
+}
+
+.nav-pills li a:hover {
+    color: #a1a1a1;
 }

@@ -49,7 +49,7 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -65,10 +65,16 @@
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <img src="./assets/images/mypic.jpg" class="img-circle img-responsive center-block" alt="" width=200>
-                    <h1>Call Me </h1>
-                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex recusandae perferendis accusantium ratione! Fugiat aliquam eum, odio distinctio nostrum, corporis optio, voluptatum minima laboriosam adipisci quibusdam sequi perspiciatis animi quae!</span><span>Consequatur non, ab natus id illum repudiandae deleniti voluptas, quae incidunt. Dolor, nostrum aliquam accusamus maiores, tenetur nihil nemo. Asperiores, animi mollitia veniam nisi non distinctio molestiae iste quia culpa.</span></p>
+                <div class="col-sm-4">
+                    <img src="./assets/images/mypic.jpg" class="img-circle img-responsive center-block" alt="" width=250>
+                </div>
+                <div class="col-md-8">
+                    <h1>Hey!</h1>
+                    <p>
+                        My name's Michael Nguyen. I’m a multifaceted junior developer. I build web applications with Node and
+                        learning Python Pandas for data analysis and visualization. I love interdisciplinary work, having
+                        backgrounds in both neurobiology and the Bicycle Industry. I'm a flexible team-worker, an efficient learner and a detail-oriented abstract thinker. I seek to become an effective web developer, to better contribute my skills. 
+                    </p>
                 </div>
             </div>
         </div>
@@ -78,26 +84,37 @@
     <section id="portfolio" class="portfolio-section">
         <div class="container">
             <!-- Probably do a Pills tabbed display box here.-->
-            <h1>Works</h1>
-            
-            <div role="tabpanel">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#tab" aria-controls="tab" role="tab" data-toggle="tab">tab</a>
-                    </li>
-                </ul>
-            
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="home">...</div>
-                    <div role="tabpanel" class="tab-pane" id="tab">...</div>
+            <h1>Projects</h1>
+
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a data-toggle="pill" href="#home">PokéCSS</a></li>
+                <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+                <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+                <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>PokéCSS</h3>
+                    <p>A CSS color variable sheet generator based off of Pokémon design colors.</p>
+                    <p><a href="https://github.com/Larou-Tim/Project-Omega-Watch">Github</a></p>
+                    <p><a href="https://project-omega-watch.firebaseapp.com/">Hosted: Firebase</a></p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                        rem aperiam.</p>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <h3>Menu 3</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
@@ -107,6 +124,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Contact Me</h1>
+                    <p><a href="https://github.com/nguyen-michael/">github</a></p>
+                    <p><a href="https://www.linkedin.com/in/nguyenmichl/">linkedin</a></p>
+                    <p>nguyen.michl (at) gmail.com</p>
+                    <p>Resume available on request.</p>
                 </div>
             </div>
         </div>
