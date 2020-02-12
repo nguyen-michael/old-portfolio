@@ -6,158 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Michael Nguyen</title>
-    <!-- normalize css -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Scrolling Nav Theme -->
-    <link rel="stylesheet" href="assets/css/scrolling-nav.css">
-    <!-- Document Style Sheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- jQuery -->
-    <script src="assets/js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Scrolling Nav JavaScript -->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Belgrano&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/favicon/favicon-32x32.png" type="image/x-icon">
 
 </head>
 
-<!-- Add github and linkedin to top bar -->
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Michael Nguyen</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+<body>
+    <nav>
+        <ul>
+            <li><a href="#main">MN</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./assets/images/mypic.jpg" class="img-circle img-responsive center-block" alt="" width=250>
-                </div>
-                <div class="col-md-8">
-                    <h1>Hello!</h1>
-                    <p>
-                        My name is Michael Nguyen. I am a bicycle-mechanic-by-day, looking to expand my skillset and get a foothold in the software development world!
-                        I primarily work in Javascript via Node but I also have experience scripting in Python and have worked with R for data analysis and visualization. 
-                        I like to draw concepts from afar to apply to my current situation at hand. I appreciate a diverse working environment, having done work in biological research and the
-                        bicycle industry. I am a flexible team-worker, an abstract thinker with a strong grasp on concrete concepts and an efficient learner. 
-                        I aspire to do my best as a junior developer and to be open to learning opportunies, whatever form they come in.
-                    </p>
-                </div>
+    <section id="main">
+        <h1>Hi! I'm <span>Michael Nguyen</span>.</h1>
+        <p>Full-stack web developer.</p>
+    </section>
+
+    <section id="about">
+        <h1>About me.</h1>
+        <div id="about-content">
+            <img src="./images/DSCF0187 copy.jpg" alt="">
+            <section id="about-me">
+                <h2>Hello,</h2>
+                <p>
+                    I am an aspiring software engineer / web developer with a passion for learning. I am a team player bent on solving problems collaboratively and coeducationally. I have programming experience from university and a web development certificate. I am a problem solver, both in abstract and concrete realms.
+                </p>
+            </section>
+            <section id="skills">
+                <h2>Technical Skills</h2>
+
+                <ul>
+                    <li>HTML, CSS, Bootstrap, P5.js</li>
+                    <li>React.js</li>
+                    <li>Javascript, Node.js</li>
+                    <li>Express.js</li>
+                    <li>MySQL, MongoDB</li>
+                    <li>Python, R</li>
+                    <li>Linux (Ubuntu, Debian)</li>
+                    <li>Git, Heroku</li>
+                </ul>
+
+                <h2>Soft Skills</h2>
+
+                <ul>
+                    <li>Focus on functionality and servicability</li>
+                    <li>Attention to detail</li>
+                    <li>Quality, friendly customer service</li>
+                    <li>Explaining concepts non-technically</li>
+                    <li>Effective learning</li>
+                </ul>
+
+            </section>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h1>My projects.</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <a href="https://corn-notes.herokuapp.com/" target="_blank">
+                    <img src="./images/projects/cornnotes.png" alt="Corn Notes, Note Taking application">
+                    <div class="project-overlay">
+                        <div class="project-text">Corn Notes, Note Taking application</div>
+                    </div>
+                </a>
             </div>
+
+            <div class="project-card">
+                <a href="https://nyt-reactive.herokuapp.com/" target="_blank">
+                    <img src="./images/projects/nyt-reactive.png"
+                        alt="NYT Reactive, Learning React through accessing NYT API and SQL backend">
+                    <div class="project-overlay">
+                        <div class="project-text">NYT Reactive, Learning React through accessing NYT API and SQL backend
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://project-omega-watch.firebaseapp.com/" target="_blank">
+                    <img src="./images/projects/pokecss.png"
+                        alt="CSS Color Palette Generator based on Pokemon API designs.">
+                    <div class="project-overlay">
+                        <div class="project-text">CSS Color Palette Generator based on Pokemon Designs</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <a href="https://bike-utils.herokuapp.com/gear-ratio" target="_blank">
+                    <img src="./images/projects/gear-ratios.png"
+                        alt="Bicycle Utilities including Gear ratio and spoke length calculation">
+                    <div class="project-overlay">
+                        <div class="project-text">Bicycle Utilities including Gear ratio and spoke length calculation</div>
+                    </div>
+                
+                </a></div>
         </div>
     </section>
 
-    <!-- portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <!-- Probably do a Pills tabbed display box here.-->
-            <h1>Projects</h1>
-
-            <ul class="nav nav-pills nav-justified">
-                <li class="active"><a data-toggle="pill" href="#home">PokéCSS</a></li>
-                <li><a data-toggle="pill" href="#menu1">NYT-Reactive</a></li>
-                <li><a data-toggle="pill" href="#menu2">Corn-Notes</a></li>
-                <li><a data-toggle="pill" href="#menu3">Geo-Viz!</a></li>
-            </ul>
-
-            <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
-                    <div class="col-sm-4">
-                        <img src="./assets/images/pokecss.PNG" alt="" class="img-responsive center-block">
-                    </div>
-                    <div class="col-sm-8">
-                        <h3>PokéCSS</h3>
-                        <p>A CSS color variable sheet generator based off of Pokémon design colors.</p>
-                        <p><a href="https://github.com/Larou-Tim/Project-Omega-Watch">Github</a></p>
-                        <p><a href="https://project-omega-watch.firebaseapp.com/">Hosted: Firebase</a></p>
-                    </div>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                    <div class="col-sm-4">
-                        <img src="./assets/images/reactnyt.PNG" alt="" class="img-responsive center-block">
-                    </div>
-                    <div class="col-sm-8">
-                        <h3>NYT Searching</h3>
-                        <p>Search the New York Times archive and save to a collective database. This was a fun practice run
-                            with React.js.
-                        </p>
-                        <p><a href="http://nyt-reactive.herokuapp.com/">Heroku</a></p>
-                    </div>
-                </div>
-                <div id="menu2" class="tab-pane fade">
-                    <div class="col-sm-4">
-                        <img src="./assets/images/cornnotes.PNG" alt="" class="img-responsive center-block">
-                    </div>
-                    <div class="col-sm-8">
-                        <h3>Corn-Notes</h3>
-                        <p>Cornell-style note taking application for educators and students. Note-saving with authentication functionality.</p>
-                        <p><a href="https://corn-notes.herokuapp.com/">Heroku</a></p>
-                    </div>
-                </div>
-                <div id="menu3" class="tab-pane fade">
-                    <div class="col-sm-4">
-                        <img src="./assets/images/geo-viz.png" alt="" class="img-responsive center-block">
-                    </div>
-                    <div class="col-sm-8">
-                        <h3>Geo-Viz!</h3>
-                        <p>A Bicycle Geometry Visualization and Comparison app, made with P5.js.</p>
-                        <p><a href="https://nguyen-michael.github.io/geo-viz">Github Pages</a></p>
-                    </div>
-                </div>
-            </div>
-
+    <section id="contact">
+        <h1>Contact me.</h1>
+        <button id="display-email">Display Actual Email</button>
+        <a id="email" href="">antibot@fakeemail.net</a>
+        <div>
+            <a href="https://github.com/nguyen-michael"><img src="./images/social/github-64.png" alt="Github"></a>
+            <a href=""><img src="./images/social/linkedin-64.png" alt="Linkedin"></a>
         </div>
+        <p> Resume available on request.</p>
+        <p><small>©2020 made from scratch by me.</small></p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Me</h1>
-                    <p><a href="https://github.com/nguyen-michael/">github</a></p>
-                    <p>nguyen.michl (at) gmail.com</p>
-                    <p>Resume available on request.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
 </body>
+<script>
+    // Anti crawler copypastable/mailto link
+
+    const email = document.getElementById("email");
+    const button = document.getElementById("display-email");
+
+    button.onclick = () => {
+        const a = ["n", "y", ".", "c", "@", "a", "."];
+        const b = ["g", "e", "m", "h", "g", "i", "c"];
+        const c = ["u", "n", "i", "l", "m", "l", "o"];
+        const d = ["m"];
+
+        let string = "";
+
+        a.forEach((char, index) => {
+            string += char + b[index] + c[index];
+        });
+
+        string += d[0];
+
+        email.innerHTML = string;
+        email.href = "mailto:" + string;
+
+    };
+
+</script>
 
 </html>
