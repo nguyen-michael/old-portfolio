@@ -7,14 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Michael Nguyen</title>
     <link href="https://fonts.googleapis.com/css?family=Belgrano&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./images/favicon/favicon-32x32.png" type="image/x-icon">
 
 </head>
 
 <body>
-    <nav>
+    <section id="main">
+        <h1>Hi! I'm <span>Michael Nguyen</span>.</h1>
+        <p>Full-stack web developer.</p>
+    </section>
+
+    <nav id="nav">
         <ul>
             <li><a href="#main">MN</a></li>
             <li><a href="#about">About</a></li>
@@ -23,11 +29,6 @@
         </ul>
     </nav>
 
-    <section id="main">
-        <h1>Hi! I'm <span>Michael Nguyen</span>.</h1>
-        <p>Full-stack web developer.</p>
-    </section>
-
     <section id="about">
         <h1>About me.</h1>
         <div id="about-content">
@@ -35,7 +36,10 @@
             <section id="about-me">
                 <h2>Hello,</h2>
                 <p>
-                    I am an aspiring software engineer / web developer with a passion for learning. I am a team player bent on solving problems collaboratively and coeducationally. I have programming experience from university and a web development certificate. I am a problem solver, both in abstract and concrete realms.
+                    I am an aspiring software engineer / web developer with a passion for learning. I am a team player
+                    bent on solving problems collaboratively and coeducationally. I have programming experience from
+                    university and a web development certificate. I am a problem solver, both in abstract and concrete
+                    realms.
                 </p>
             </section>
             <section id="skills">
@@ -105,9 +109,10 @@
                     <img src="./images/projects/gear-ratios.png"
                         alt="Bicycle Utilities including Gear ratio and spoke length calculation">
                     <div class="project-overlay">
-                        <div class="project-text">Bicycle Utilities including Gear ratio and spoke length calculation</div>
+                        <div class="project-text">Bicycle Utilities including Gear ratio and spoke length calculation
+                        </div>
                     </div>
-                
+
                 </a></div>
         </div>
     </section>
@@ -127,8 +132,19 @@
 
 </body>
 <script>
+    // Sticky Nav when scrolling past #about
+    const nav = document.getElementById("nav");
+    const sticky = nav.offsetTop;
+    
+    window.onscroll = () => {
+        if (window.pageYOffset >= sticky) {
+            nav.classList.add("sticky");
+        } else {
+            nav.classList.remove("sticky");
+        }
+    }
+  
     // Anti crawler copypastable/mailto link
-
     const email = document.getElementById("email");
     const button = document.getElementById("display-email");
 
