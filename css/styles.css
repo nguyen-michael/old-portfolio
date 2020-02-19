@@ -180,24 +180,15 @@ nav li {
     font-size: 2.5rem;
 }
 
-
-/* Sticky nav styles */
 nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     text-align: center;
     width: 100%;
     padding: 20px 0;
     background-color: var(--lighter-color-rgba);
     z-index: 99;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-  
-  .sticky + #about {
-    padding-top: 60px;
 }
 
 
