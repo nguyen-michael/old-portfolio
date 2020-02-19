@@ -249,6 +249,12 @@ nav {
     flex: 1;
 }
 
+#skills p {
+    margin: 9% 0;
+    color: var(--red-accent-color);
+    text-decoration: underline dotted;
+}
+
 /* Projects */
 
 #projects {
@@ -473,12 +479,11 @@ nav {
         font-size: 1.2rem;
         margin: 1% 2%;
     }
+
+    nav {
+        padding: 15px 0;
+    }
 }
-
-/* @media only screen and (max-width: 360px) {
-    
-} */
-
 
 /* Scrollbar */
 
