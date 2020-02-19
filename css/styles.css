@@ -121,11 +121,11 @@ a:hover {
 
 #main h1 {
     text-align: center;
-    padding-top: 120px;
+    padding-top: 6%;
 
     font-size: 6rem;
     
-    color: var(--darker-text-color);
+    /* color: var(--darker-text-color); */
 }
 
 #main h1 span {
@@ -136,12 +136,38 @@ a:hover {
 #main p {
     margin-top: 30px;
     text-align: center;
-    padding: 0 240px;
+    padding: 0 25%;
 
     font-size: 2rem;
     font-weight: 100;
     line-height: 2.4rem;
-    color: var(--darker-text-color);
+    /* color: var(--darker-text-color); */
+}
+
+#main div {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    margin-left: -50px;
+    
+    text-align: center;
+    margin-top: 6%;
+}
+
+#main button{
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: var(--lighter-color);
+    font-family: var(--body-font);
+    font-size: 1.4rem;
+    font-weight: 900;
+    border: 3px solid var(--lighter-color);
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 /* Nav bar */
@@ -151,20 +177,13 @@ nav li {
     margin: 30px;
 
     font-family: var(--heading-font);
-    font-size: xx-large;
+    font-size: 2.5rem;
 }
 
-/* nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 20px 0;
-    background-color: var(--lighter-color-rgba);
-    z-index: 99;
-} */
 
 /* Sticky nav styles */
 nav {
+    text-align: center;
     width: 100%;
     padding: 20px 0;
     background-color: var(--lighter-color-rgba);
@@ -198,13 +217,14 @@ nav {
 }
 
 #about h1 {
+    padding-top: 4%;
     padding-bottom: 30px;
 }
 
 #about h2 {
     font-weight: 700;
     font-family: var(--heading-font);
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 #about h2:first-child {
@@ -221,7 +241,7 @@ nav {
 }
 
 #about img {
-    max-width: 30%;
+    max-width: 100%;
     border-radius: 45%;
     align-self: center;
 }
@@ -259,7 +279,6 @@ nav {
 
 .projects-container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 30px;
@@ -347,6 +366,128 @@ nav {
     font-size: 0.75rem;
     opacity: 0.6;
 }
+
+/* Media Queries */
+@media only screen  and (max-width: 1024px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    #main h1 {
+        padding-top: 5%;
+        font-size: 3rem;
+    }
+
+    #main h1 span {
+        font-weight: 600;
+    }
+
+    #main p {
+        padding: 0 20%;
+        margin-top: 20px;
+        font-size: 1.6rem;
+        line-height: 1.5rem;
+
+    }
+
+    #about {
+        height: auto;
+        padding-top: 10%;
+    }
+
+    #about-content {
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav li {
+        font-size: 1.7rem;
+        margin: 1% 2.5%;
+    }
+    
+    #about-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #about-image {
+        width: 100%;
+    }
+
+    #about img {
+        /* width: 10rem;
+        height: auto; */
+        margin-bottom: 10%;
+        margin-right: 0;
+        border-radius: 20%;
+    }
+
+    #about-me, #skills {
+        margin-bottom: 7%;
+    }
+
+    #projects {
+        height: auto;
+        padding-top: 10%;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        margin-right: 0;
+        max-width: 85%;
+        padding: 5% 0;
+    }
+
+    #contact {
+        padding-top: 10%;
+    }
+
+    .project-overlay {
+        position: absolute;
+        top: 5%;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        height: 89%;
+        width: 100%;
+        opacity: 0.70;
+        border-radius: 3px;
+        background-color: var(--main-text-color);
+    }
+    
+    .project-text {
+        color: var(--lighter-color);
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    nav li {
+        font-size: 1.2rem;
+        margin: 1% 2%;
+    }
+}
+
+/* @media only screen and (max-width: 360px) {
+    
+} */
+
 
 /* Scrollbar */
 
