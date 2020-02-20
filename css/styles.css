@@ -72,7 +72,7 @@ green darker:
     --main-text-color: #545849;
     --darker-text-color: #2c2b1c;
     --lighter-color: #fcfeed;
-    --lighter-color-rgba: rgba(252, 254, 237, 0.4);
+    --lighter-color-rgba: rgba(252, 254, 237, 0.97);
     --xlight-color: #fefbf1;
     --red-accent-color: #6a4d47;
     --body-font: "Amiko", sans-serif;
@@ -261,6 +261,10 @@ nav {
     margin: 9% 0;
     color: var(--red-accent-color);
     text-decoration: underline dotted;
+}
+
+.bullet-points li {
+    list-style: disc outside;
 }
 
 /* Projects */
