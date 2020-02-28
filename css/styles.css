@@ -226,11 +226,12 @@ nav {
 }
 
 #about p {
-    line-height: 1.1rem;
+    line-height: 1.2rem;
 }
 
 #about li {
     margin: 5px 0;
+    line-height: 1.2rem;
 }
 
 #about img {
@@ -253,12 +254,6 @@ nav {
 
 #about-me {
     flex: 2;
-}
-
-#skills p {
-    margin: 9% 0;
-    color: var(--red-accent-color);
-    text-decoration: underline dotted;
 }
 
 .bullet-points li {
@@ -372,6 +367,13 @@ nav {
 #contact small {
     font-size: 0.75rem;
     opacity: 0.6;
+}
+
+#contact > a > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--red-accent-color);
+    text-decoration: underline dotted;
 }
 
 /* Media Queries */
