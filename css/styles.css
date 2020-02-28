@@ -164,10 +164,8 @@ b {
     font-family: var(--body-font);
     font-size: 1.4rem;
     font-weight: 900;
-    border: 3px solid var(--lighter-color);
-    border-radius: 5px;
     padding: 0.8rem 2rem;
-
+    outline: none;
     margin-top: 30px;
     margin-bottom: 20px;
 }
