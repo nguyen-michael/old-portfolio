@@ -116,6 +116,8 @@ section {
 
 .title {
     flex: 1;
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
 }
 
 .content {
