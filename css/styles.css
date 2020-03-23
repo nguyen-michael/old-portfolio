@@ -369,7 +369,7 @@ nav {
     opacity: 0.6;
 }
 
-#contact > a > p {
+#contact a > span {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--red-accent-color);
