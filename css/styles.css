@@ -495,6 +495,14 @@ nav {
     nav {
         padding: 15px 0;
     }
+
+    #contact > div:first-of-type  span{
+        font-size: 1.1rem;
+    }
+
+    #contact div:first-of-type a {
+        margin: 0 10px;
+    }
 }
 
 /* Scrollbar */
